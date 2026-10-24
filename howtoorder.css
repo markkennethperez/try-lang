@@ -1,0 +1,4 @@
+/* howtoorder.css */
+.step{cursor:pointer}
+.step.is-active{border-style:solid;border-color:var(--accent);transform:translateY(-4px)}
+.step:focus-visible{outline:3px solid var(--accent);outline-offset:3px}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | TrendWear Clothing</title>
+<meta name="description" content="TrendWear Clothing: affordable, comfortable and trendy clothes for students and young people in Cebu.">
+<link rel="icon" href="high-resolution-color-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR (same on every page) ============ -->
+<header class="nav" id="navbar">
+  <div class="container nav__inner">
+    <a href="home.html" class="logo" aria-label="TrendWear home"><span class="logo__mark"><img src="high-resolution-color-logo.png" alt=""></span>Trend<span>Wear</span></a>
+    <nav id="navLinks" class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="whyus.html">Why Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="howtoorder.html">How to Order</a>
+      <a href="insight.html">Insights</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="icon-btn cart-btn" id="openCart" aria-label="Open cart">🛒<span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">Made for students · Cebu City</p>
+      <h1>Look good.<br>Spend <em>less.</em></h1>
+      <p class="lead">Affordable and trendy clothing designed for students and young people. Tees, hoodies, polos and jeans for school, hangouts and everything in between.</p>
+      <div class="hero__cta">
+        <a href="shop.html" class="btn btn--primary">Shop Now</a>
+        <a href="howtoorder.html" class="btn btn--ghost">How to Order</a>
+      </div>
+      <ul class="hero__stats">
+        <li><strong>₱149</strong><span>starting price</span></li>
+        <li><strong>10% off</strong><span>on 3+ items</span></li>
+        <li><strong>Campus</strong><span>hand-over</span></li>
+      </ul>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <div class="blob"></div>
+      <div class="hero__card hero__card--1" id="heroTee"></div>
+      <div class="hero__card hero__card--2" id="heroHoodie"></div>
+      <span class="sticker">New<br>drop!</span>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track">
+    <span>AFFORDABLE</span><span>★</span><span>TRENDY</span><span>★</span><span>COMFORTABLE</span><span>★</span><span>MADE FOR STUDENTS</span><span>★</span>
+    <span>AFFORDABLE</span><span>★</span><span>TRENDY</span><span>★</span><span>COMFORTABLE</span><span>★</span><span>MADE FOR STUDENTS</span><span>★</span>
+  </div></div>
+</section>
+
+<!-- ============ VIDEO AD (edit ad.mp4 / ad-poster.jpg to swap) ============ -->
+<section class="section" id="ad">
+  <div class="container ad">
+    <figure class="ad__player" id="adPlayer">
+      <video id="adVideo" src="ad.mp4" poster="ad-poster.jpg" muted playsinline loop preload="metadata" aria-label="TrendWear Clothing promo video"></video>
+      <div class="ad__controls">
+        <button type="button" class="icon-btn" id="adPlay" aria-label="Pause video">⏸</button>
+        <button type="button" class="icon-btn" id="adMute" aria-label="Turn sound on">🔇</button>
+      </div>
+    </figure>
+    <div class="ad__text">
+      <p class="eyebrow">Watch our promo</p>
+      <h2>Wear it. <em>Own it.</em></h2>
+      <p class="lead">See TrendWear in real student style: relaxed fits, clean looks and everyday comfort.</p>
+      <div class="hero__cta">
+        <a href="shop.html" class="btn btn--primary">Shop the look</a>
+        <a href="howtoorder.html" class="btn btn--ghost">How to Order</a>
+      </div>
+      <p class="muted" id="adHint">Tap the speaker icon to hear the sound.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRESH PICKS (rendered by home.js) ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <p class="eyebrow">Fresh picks</p>
+    <h2>Student favorites</h2>
+    <p class="section__sub">Quick add from here, or head to the shop for every size, color and filter.</p>
+    <div class="grid grid--products" id="featured"></div>
+    <p class="fresh-cta"><a class="btn btn--dark" href="shop.html">See all products →</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="home.html" class="logo logo--light">Trend<span>Wear</span></a>
+      <img class="footer-logo" src="high-resolution-color-logo.png" alt="TrendWear Clothing logo"><p>Affordable and trendy clothing designed for students and young people.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:cecitdepartment@gmail.com">cecitdepartment@gmail.com</a></p>
+      <p>Leon Kilat St., Pahina Central,<br>Cebu City, Cebu, Philippines</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <div class="social">
+        <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H7.9v3h2.6V21z"/></svg></a>
+        <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm5 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.3 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3a5 5 0 0 0 4 4.4v3a8 8 0 0 1-4-1.2v6.3a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.1a3 3 0 1 0 2 2.8V3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> TrendWear Clothing · A student project of Cebu Eastern College, Inc.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="drawer__body" id="cartBody"></div>
+  <div class="drawer__foot">
+    <dl class="totals" id="cartTotals"></dl>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Go to checkout</button>
+    <button class="link-btn" id="clearCart">Clear cart</button>
+  </div>
+</aside>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__box">
+    <button class="icon-btn modal__close" id="modalClose" aria-label="Close dialog">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="common.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

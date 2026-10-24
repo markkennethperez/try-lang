@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback | TrendWear Clothing</title>
+<meta name="description" content="TrendWear Clothing: affordable, comfortable and trendy clothes for students and young people in Cebu.">
+<link rel="icon" href="high-resolution-color-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR (same on every page) ============ -->
+<header class="nav" id="navbar">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo" aria-label="TrendWear home"><span class="logo__mark"><img src="high-resolution-color-logo.png" alt=""></span>Trend<span>Wear</span></a>
+    <nav id="navLinks" class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="whyus.html">Why Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="howtoorder.html">How to Order</a>
+      <a href="insight.html">Insights</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="icon-btn cart-btn" id="openCart" aria-label="Open cart">🛒<span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+<section class="section section--alt" id="feedback">
+  <div class="container feedback">
+    <div>
+      <p class="eyebrow">Feedback</p>
+      <h2>Tell us what you think</h2>
+      <p class="section__sub">We use your comments to improve designs, colors, sizes and customization options.</p>
+      <form id="feedbackForm" novalidate>
+        <div class="field"><label for="fbName">Name <span class="muted">(optional)</span></label><input id="fbName" type="text" maxlength="30" placeholder="Anonymous"></div>
+        <div class="field">
+          <span class="label">Your rating</span>
+          <div class="stars" id="stars" role="radiogroup" aria-label="Rating">
+            <button type="button" role="radio" aria-checked="false" data-v="1" aria-label="1 star">★</button>
+            <button type="button" role="radio" aria-checked="false" data-v="2" aria-label="2 stars">★</button>
+            <button type="button" role="radio" aria-checked="false" data-v="3" aria-label="3 stars">★</button>
+            <button type="button" role="radio" aria-checked="false" data-v="4" aria-label="4 stars">★</button>
+            <button type="button" role="radio" aria-checked="false" data-v="5" aria-label="5 stars">★</button>
+          </div>
+          <small class="err" id="starErr"></small>
+        </div>
+        <div class="field"><label for="fbText">Comment</label><textarea id="fbText" rows="4" maxlength="250" placeholder="What would you like to see more of?"></textarea><small class="err" id="fbErr"></small></div>
+        <button class="btn btn--primary" type="submit">Submit feedback</button>
+      </form>
+
+      <form id="notifyForm" class="notify" novalidate>
+        <label for="notifyEmail"><strong>Get notified about new drops</strong></label>
+        <div class="notify__row"><input id="notifyEmail" type="email" placeholder="your@email.com"><button class="btn btn--dark" type="submit">Notify me</button></div>
+        <small class="err" id="notifyErr"></small>
+      </form>
+    </div>
+    <div>
+      <div class="fb-head"><h3>Community feedback</h3><span id="avgRating" class="avg"></span></div>
+      <ul class="fb-list" id="fbList"></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="home.html" class="logo logo--light">Trend<span>Wear</span></a>
+      <img class="footer-logo" src="high-resolution-color-logo.png" alt="TrendWear Clothing logo"><p>Affordable and trendy clothing designed for students and young people.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:cecitdepartment@gmail.com">cecitdepartment@gmail.com</a></p>
+      <p>Leon Kilat St., Pahina Central,<br>Cebu City, Cebu, Philippines</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <div class="social">
+        <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H7.9v3h2.6V21z"/></svg></a>
+        <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm5 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.3 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3a5 5 0 0 0 4 4.4v3a8 8 0 0 1-4-1.2v6.3a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.1a3 3 0 1 0 2 2.8V3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> TrendWear Clothing · A student project of Cebu Eastern College, Inc.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="drawer__body" id="cartBody"></div>
+  <div class="drawer__foot">
+    <dl class="totals" id="cartTotals"></dl>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Go to checkout</button>
+    <button class="link-btn" id="clearCart">Clear cart</button>
+  </div>
+</aside>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__box">
+    <button class="icon-btn modal__close" id="modalClose" aria-label="Close dialog">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="common.js"></script>
+<script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey Insights | TrendWear Clothing</title>
+<meta name="description" content="TrendWear Clothing: affordable, comfortable and trendy clothes for students and young people in Cebu.">
+<link rel="icon" href="high-resolution-color-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="insight.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR (same on every page) ============ -->
+<header class="nav" id="navbar">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo" aria-label="TrendWear home"><span class="logo__mark"><img src="high-resolution-color-logo.png" alt=""></span>Trend<span>Wear</span></a>
+    <nav id="navLinks" class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="whyus.html">Why Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="howtoorder.html">How to Order</a>
+      <a href="insight.html">Insights</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="icon-btn cart-btn" id="openCart" aria-label="Open cart">🛒<span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+<section class="section" id="insights">
+  <div class="container">
+    <p class="eyebrow">Survey insights</p>
+    <h2>What students told us</h2>
+    <p class="section__sub">Based on our survey of 41 CEC students (convenience sampling, so results describe the surveyed group).</p>
+
+    <div class="grid grid--3 counters">
+      <div class="card counter"><strong data-count="48.5" data-suffix="%" data-dec="1">0%</strong><span>buy clothes <b>once a month</b></span></div>
+      <div class="card counter"><strong data-count="66.7" data-suffix="%" data-dec="1">0%</strong><span>usually buy <b>T-shirts &amp; Pants/Jeans</b></span></div>
+      <div class="card counter"><strong data-count="42.9" data-suffix="%" data-dec="1">0%</strong><span>prefer an <b>online platform</b> for TrendWear</span></div>
+    </div>
+
+    <div class="charts">
+      <div class="card chart">
+        <h3>Most purchased items</h3>
+        <div class="bar" data-v="66.7"><span>T-shirts</span><div class="bar__track"><i></i></div><b>66.7%</b></div>
+        <div class="bar" data-v="66.7"><span>Pants / Jeans</span><div class="bar__track"><i></i></div><b>66.7%</b></div>
+        <div class="bar" data-v="57.6"><span>Polo shirts</span><div class="bar__track"><i></i></div><b>57.6%</b></div>
+        <div class="bar" data-v="51.5"><span>Hoodies</span><div class="bar__track"><i></i></div><b>51.5%</b></div>
+        <div class="bar" data-v="36.4"><span>Oversized shirts</span><div class="bar__track"><i></i></div><b>36.4%</b></div>
+        <div class="bar" data-v="33.3"><span>Shorts</span><div class="bar__track"><i></i></div><b>33.3%</b></div>
+      </div>
+      <div class="card chart">
+        <h3>How often they buy clothes</h3>
+        <div class="bar" data-v="48.5"><span>Once a month</span><div class="bar__track"><i></i></div><b>48.5%</b></div>
+        <div class="bar" data-v="30.3"><span>Every 2–3 months</span><div class="bar__track"><i></i></div><b>30.3%</b></div>
+        <div class="bar" data-v="9.1"><span>Every 2–3 weeks</span><div class="bar__track"><i></i></div><b>9.1%</b></div>
+        <div class="bar" data-v="9.1"><span>Rarely</span><div class="bar__track"><i></i></div><b>9.1%</b></div>
+        <div class="bar" data-v="3"><span>Weekly</span><div class="bar__track"><i></i></div><b>3.0%</b></div>
+      </div>
+      <div class="card chart chart--donut">
+        <h3>Preferred channel for TrendWear</h3>
+        <div class="donut" id="donut" role="img" aria-label="Online shopping 42.9%, physical or school-based 37.1%, TikTok 11.4%, others 8.6%"><span>Channel<br>preference</span></div>
+        <ul class="legend">
+          <li><i style="--c:var(--accent)"></i>Online platform <b>42.9%</b></li>
+          <li><i style="--c:var(--ink)"></i>Physical / school-based <b>37.1%</b></li>
+          <li><i style="--c:#7c5cff"></i>TikTok <b>11.4%</b></li>
+          <li><i style="--c:var(--line)"></i>Instagram / Facebook <b>8.6%</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="subhead">What customers asked for</h3>
+    <div class="tags">
+      <span>Affordable prices</span><span>Trendy designs</span><span>Good quality</span><span>Comfortable clothing</span><span>Different colors</span><span>More size options</span><span>Customization</span>
+    </div>
+
+    <h3 class="subhead">How we compare</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shop</th><th>Products</th><th>Price range</th><th>Strength</th><th>Weakness</th></tr></thead>
+        <tbody>
+          <tr><td>The Great Finds Vintage Cebu (TGF.PH)</td><td>Tops, tees, blouses, graphic tees, hoodies, pants</td><td>₱249 – ₱399</td><td>Vintage and streetwear styles</td><td>Premium items can cost more than basics</td></tr>
+          <tr><td>Go-to Style Clothing Shop (GTS)</td><td>Standard streetwear, oversized shirts</td><td>₱149 – ₱250</td><td>Affordable prices</td><td>Mostly thrifted, so designs and sizes change</td></tr>
+          <tr class="us"><td>TrendWear Clothing</td><td>Tees, polos, hoodies, jeans, oversized, shorts</td><td>₱149 – ₱399</td><td>Affordable, trendy, consistent sizes, bundle deals</td><td>Small pilot stock at first</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="home.html" class="logo logo--light">Trend<span>Wear</span></a>
+      <img class="footer-logo" src="high-resolution-color-logo.png" alt="TrendWear Clothing logo"><p>Affordable and trendy clothing designed for students and young people.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:cecitdepartment@gmail.com">cecitdepartment@gmail.com</a></p>
+      <p>Leon Kilat St., Pahina Central,<br>Cebu City, Cebu, Philippines</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <div class="social">
+        <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H7.9v3h2.6V21z"/></svg></a>
+        <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm5 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.3 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3a5 5 0 0 0 4 4.4v3a8 8 0 0 1-4-1.2v6.3a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.1a3 3 0 1 0 2 2.8V3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> TrendWear Clothing · A student project of Cebu Eastern College, Inc.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="drawer__body" id="cartBody"></div>
+  <div class="drawer__foot">
+    <dl class="totals" id="cartTotals"></dl>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Go to checkout</button>
+    <button class="link-btn" id="clearCart">Clear cart</button>
+  </div>
+</aside>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__box">
+    <button class="icon-btn modal__close" id="modalClose" aria-label="Close dialog">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="common.js"></script>
+<script src="insight.js"></script>
+</body>
+</html>
